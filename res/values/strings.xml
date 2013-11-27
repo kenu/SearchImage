@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SearchImage</string>
+    <string name="action_settings">Settings</string>
+    <string name="search_button">Search</string>
+    <string name="query">input query</string>
+    
+</resources>
