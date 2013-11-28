@@ -19,6 +19,6 @@
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:contentDescription="@string/image"
-        android:src="@drawable/jessica" />
+        android:src="@drawable/ic_launcher" />
 
 </LinearLayout>

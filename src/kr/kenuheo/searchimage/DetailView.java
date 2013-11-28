@@ -19,7 +19,7 @@ public class DetailView extends Activity {
 		titleView.setText(title);
 		
 		ImageView imageView = (ImageView) findViewById(R.id.imageView1);
-		new ImageLoader(this).DisplayImage(thumbnail, imageView);
+		new DownloadImageTask(imageView).execute(thumbnail);
 	}
 
 }
