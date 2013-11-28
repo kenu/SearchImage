@@ -29,6 +29,7 @@ public class CustomizedListView extends Activity {
     static final String KEY_ARTIST = "sizewidth";
     static final String KEY_DURATION = "sizeheight";
     static final String KEY_THUMB_URL = "thumbnail";
+    static final String KEY_LINK = "link";
 
     ListView list;
     LazyAdapter adapter;
@@ -84,6 +85,7 @@ public class CustomizedListView extends Activity {
             map.put(KEY_ARTIST, parser.getValue(e, KEY_ARTIST));
             map.put(KEY_DURATION, parser.getValue(e, KEY_DURATION));
             map.put(KEY_THUMB_URL, parser.getValue(e, KEY_THUMB_URL));
+            map.put(KEY_LINK, parser.getValue(e, KEY_LINK));
 
             // adding HashList to ArrayList
             songsList.add(map);
@@ -104,7 +106,7 @@ public class CustomizedListView extends Activity {
             	HashMap<String, String> map = songsList.get(position);
             	Intent intent = new Intent(getApplicationContext(), DetailView.class);
             	intent.putExtra(KEY_TITLE, map.get(KEY_TITLE));
-            	intent.putExtra(KEY_THUMB_URL, map.get(KEY_THUMB_URL));
+            	intent.putExtra(KEY_LINK, map.get(KEY_LINK));
             	
             	startActivity(intent);
 

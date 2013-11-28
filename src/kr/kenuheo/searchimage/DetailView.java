@@ -13,7 +13,7 @@ public class DetailView extends Activity {
 		
 		Bundle extras = getIntent().getExtras();
 		String title = extras.getString(CustomizedListView.KEY_TITLE);
-		String thumbnail = extras.getString(CustomizedListView.KEY_THUMB_URL);
+		String thumbnail = extras.getString(CustomizedListView.KEY_LINK);
 		
 		TextView titleView = (TextView) findViewById(R.id.title);
 		titleView.setText(title);
